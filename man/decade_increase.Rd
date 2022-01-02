@@ -18,10 +18,9 @@ tonnes of carbon dioxide-equivalents. One such dataframe can obtained from
 \item{decades}{A character vector containing the decades that should be
 included in the plot, in the format \code{"1990-1999"}.}
 
-\item{regions}{A character vector containing the codes of regions that should
-be included in the plot. The codes must match those of the \code{df}
-variable \code{iso_code}. If not provided or set to NULL, all of the
-regions in \code{df} are included in the plot.}
+\item{regions}{A character vector containing the codes of countries and/or
+regions that should be included in the plot. The codes must match those of
+the \code{df} variable \code{iso_code}.}
 }
 \description{
 \code{decade_increase} draws a plot of decade-to-decade change in total
@@ -34,7 +33,6 @@ decades provided in \code{decades} argument.
 
 Greenhouse_Gas_Emissions <-
 read.csv("https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv")
-
 decade_increase(Greenhouse_Gas_Emissions,
 c("1990-1999", "1980-1989"),
 c("USA", "GBR"))

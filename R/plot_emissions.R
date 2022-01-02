@@ -5,8 +5,13 @@
 #'
 #' The x-axis range of the plot goes from the earliest to the latest year with
 #' available data for any of the regions provided to the \code{regions}
-#' argument. If the number of regions requested is between two and ten, a legend
-#' is included to the plot.
+#' argument.
+#'
+#' If the number of regions requested is between two and ten, a legend is added
+#' to the plot.
+#'
+#' If not provided or set to \code{NULL}, all of the regions in \code{df} are
+#' included in the plot.
 #'
 #' @param df A dataframe containing annual carbon dioxide, methane and nitrous
 #'   oxide emissions records by country or region. It must include variables
@@ -15,10 +20,9 @@
 #'   each region. The greenhouse gases emissions units should be in million
 #'   tonnes of carbon dioxide-equivalents. One such dataframe can obtained from
 #'   \emph{Our World in Data}: \url{https://github.com/owid/co2-data}.
-#' @param regions A character vector containing the codes of regions that should
-#'   be included in the plot. The codes must match those of the \code{df}
-#'   variable \code{iso_code}. If not provided or set to NULL, all of the
-#'   regions in \code{df} are included in the plot.
+#' @param regions A character vector containing the codes of countries and/or
+#'   regions that should be included in the plot. The codes must match those of
+#'   the \code{df} variable \code{iso_code}.
 #' @param title The title of the plot. It is NULL by default.
 #'
 #' @export
@@ -26,7 +30,6 @@
 #' @examples
 #' Greenhouse_Gas_Emissions <-
 #' read.csv("https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv")
-#'
 #' plot_emissions(Greenhouse_Gas_Emissions,
 #' c("USA", "CHN", "GBR", "RUS"),
 #' "Emissions of historical global powers")
