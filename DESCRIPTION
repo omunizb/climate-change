@@ -1,0 +1,12 @@
+Package: ccplot
+Title: Plots and Statistics to Understand Climate Change
+Version: 0.0.0.9000
+Authors@R: 
+    person("Oriol", "Muniz", , "oriol.muniz@estudiantat.upc.edu", role = c("aut", "cre"))
+Description: Functions that help with greenhouse gas emissions data visualization and to evaluate their impact on climate change.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    dplyr
