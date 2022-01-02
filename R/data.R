@@ -1,0 +1,15 @@
+#' Future GDP and population data for the US
+#'
+#' A dataset containing population and Gross Domestic Product (GDP)
+#' projections for the United States of America from 2021 to 2030.
+#'
+#' @format A data frame with 10 rows and 3 variables:
+#' \describe{
+#'   \item{year}{the year of the data}
+#'   \item{population}{estimated US population in thousands of people}
+#'   \item{gdp}{GDP estimates in billions of USD}
+#' }
+#' @source
+#' \url{https://www2.census.gov/programs-surveys/popproj/tables/2017/2017-summary-tables/np2017-t1.xlsx}
+#' \url{https://www.cbo.gov/system/files/2021-07/51135-2021-07-economicprojections.xlsx}
+"futdata"

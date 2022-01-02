@@ -7,8 +7,8 @@
 #' annual GDP, population and decade of the country or region of interest.
 #'
 #' @param df A dataframe containing annual carbon dioxide, methane and nitrous
-#'   oxide emissions records by country or region. It must include variables
-#'   \code{iso_code}, \code{year}, \code{co2}, \code{methane},
+#'   oxide emissions records by country or region, at least since 1990. It must
+#'   include variables \code{iso_code}, \code{year}, \code{co2}, \code{methane},
 #'   \code{nitrous_oxide}, \code{population} and \code{gdp} where
 #'   \code{iso_code} is a code uniquely identifying each region. The greenhouse
 #'   gases emissions units should be in million tonnes of carbon
